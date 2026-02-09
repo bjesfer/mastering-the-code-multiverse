@@ -60,7 +60,7 @@ Imagine a client wants a "Dark Mode" version of your profile, but you must keep 
 ## 🕒 Mission 3: Team Profile Gallery (Collaborative Project)
 
 **⏱️ Suggested Time:** 60 Minutes  
-**Objective:** Work as a team of 5 collaborators on a shared repository using fork, clone, pull requests, issues, and project management.
+**Objective:** Work as a team of 5 collaborators on a shared repository using fork, clone, and pull requests.
 
 ### 3.1 Setup: Team Repository Structure (Instructor-led, 5 Mins)
 
@@ -68,15 +68,11 @@ Imagine a client wants a "Dark Mode" version of your profile, but you must keep 
 
 - A `Global Guestbook` folder with a comprehensive `README.md`
 - A `Global Guestbook/profiles/` folder for student participant HTML pages
-- Ready for GitHub Project Board (Kanban) with columns: "To Do", "In Progress", "Review", "Done"
-- Ready for 5 Issues to be created, one for each student participant (e.g., "Create profile page for [Participant Name]")
 
 **Instructor Action Before Lab:**
 
 1. ✅ Repository structure is ready (Global Guestbook folder exists)
-2. Create a GitHub Project Board with columns: "To Do", "In Progress", "Review", "Done"
-3. Create 5 Issues, one for each student participant with title: "Create profile page for [Participant Name]"
-4. Add labels to issues: "profile", "good first issue"
+2. Share the repository URL with students
 
 **Team Formation:** Students are divided into teams of 5.
 
@@ -95,14 +91,7 @@ cd "Global Guestbook"
 git remote -v
 ```
 
-### 3.3 Claim Your Task (5 Mins)
-
-1. Go to the **Issues** tab in the main repository (instructor's repo).
-2. Find an issue with your name or claim an unclaimed issue.
-3. Assign the issue to yourself.
-4. Move the issue card to "In Progress" on the Project Board.
-
-### 3.4 Create Your HTML Profile Page (25 Mins)
+### 3.3 Create Your HTML Profile Page (30 Mins)
 
 Each team member creates their own profile page:
 
@@ -184,23 +173,21 @@ Each team member creates their own profile page:
    git push origin add-profile-yourname
    ```
 
-### 3.5 Create a Pull Request (10 Mins)
+### 3.4 Create a Pull Request (15 Mins)
 
 1. Go to your fork on GitHub. You should see a banner suggesting to "Compare & pull request."
 2. Click it and create a Pull Request (PR) to the **main repository** (instructor's repo).
 3. In the PR description:
-   - Reference the issue number (e.g., "Closes #3")
    - Briefly describe what you added
-4. **Move the Issue:** On the Project Board, move your issue to the "Review" column.
+   - Mention which profile is yours
 
-### 3.6 Code Review & Merge (5 Mins)
+### 3.5 Code Review & Merge (5 Mins)
 
 **Team Activity:**
 
 - Review at least one other team member's Pull Request
 - Leave a constructive comment
 - Instructor merges approved PRs
-- Move completed issues to "Done"
 
 ---
 
@@ -245,7 +232,6 @@ After other team members' PRs are merged, your fork becomes outdated.
 - [ ] I created an HTML profile page and pushed it to my fork.
 - [ ] I created a Pull Request to the main repository.
 - [ ] I reviewed at least one teammate's Pull Request.
-- [ ] I worked with GitHub Issues and moved tasks on a Project Board.
 - [ ] My profile page is merged into the team gallery.
 
 ---
@@ -257,11 +243,7 @@ After other team members' PRs are merged, your fork becomes outdated.
 1. ✅ Repository `mastering-the-code-multiverse` is ready with `Global Guestbook` folder
 2. ✅ `Global Guestbook/README.md` contains detailed instructions and HTML template
 3. ✅ `Global Guestbook/profiles/` folder exists and ready for student submissions
-4. Set up a GitHub Project Board with columns: To Do, In Progress, Review, Done
-5. Create Issue (one per student participant): "Create profile page for [Participant Name]"
-   - Example: "Create profile page for John Doe"
-6. Add labels to issues: "profile", "good first issue", "collaboration"
-7. Share the repository URL with students
+4. Share the repository URL with students
 
 **During the Lab:**
 
@@ -269,7 +251,6 @@ After other team members' PRs are merged, your fork becomes outdated.
 - Monitor Pull Requests in real-time
 - Guide students through merge conflicts if they arise
 - Merge approved PRs
-- Update Project Board as needed
 - Celebrate completed profiles!
 
 ---
@@ -283,9 +264,8 @@ By the end of this lab, students will be able to:
 3. ✅ Resolve merge conflicts manually
 4. ✅ Fork and clone repositories
 5. ✅ Create and manage Pull Requests
-6. ✅ Work with GitHub Issues and Project Boards
-7. ✅ Collaborate effectively in a team using Git workflow
-8. ✅ Understand the difference between `origin` and `upstream` remotes
+6. ✅ Collaborate effectively in a team using Git workflow
+7. ✅ Understand the difference between `origin` and `upstream` remotes
 
 ---
 
