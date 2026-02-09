@@ -1,44 +1,22 @@
 # 🚀 Lab Activity: The Code Multiverse Challenge
 
-**Total Duration:** 4 Hours (240 Minutes)  
+**Total Duration:** 3 Hours (180 Minutes)  
 **Target Audience:** IT College Students  
 **Mission:** Transition from a "Local Developer" to a "Global Contributor" by navigating the Git workflow.
 
 ---
 
-## 🏁 Mission 1: The Forge (Environment Setup)
-
-**⏱️ Suggested Time:** 45 Minutes  
-**Objective:** Prepare your workstation and establish your digital identity.
-
-### 1.1 Tool Checklist (30 Mins)
-
-Ensure your machine is equipped with the following. If missing, acquire them from their official sources:
-
-1. **Git Engine:** (Verify via terminal using a version check command).
-2. **The Editor:** VS Code.
-3. **The Cloud Vault:** A registered GitHub account.
-
-### 1.2 Establish Identity (15 Mins)
-
-Git needs to "sign" every save point you create.
-
-- **Task:** Configure your global settings so your name and email are attached to every commit.
-- **Critical Thinking:** Why is it important to use the same email address here as the one on your GitHub account?
-
----
-
-## 🕒 Mission 2: Tracking Time (Local Workflow)
+## 🕒 Mission 1: Tracking Time (Local Workflow)
 
 **⏱️ Suggested Time:** 60 Minutes  
 **Objective:** Move a project through the "Three Stages of Git."
 
-### 2.1 The Project Start (15 Mins)
+### 1.1 The Project Start (15 Mins)
 
 1. Create a workspace named `multiverse-lab`.
 2. Inside, create a file named `profile.md` containing a brief professional bio.
 
-### 2.2 The Three-Stage Loop (30 Mins)
+### 1.2 The Three-Stage Loop (30 Mins)
 
 Your goal is to successfully take a "Snapshot" of your work.
 
@@ -47,7 +25,7 @@ Your goal is to successfully take a "Snapshot" of your work.
 - **Task C (Commit):** Permanently seal the vault with a descriptive message.
 - **Observation:** Run a status command after each task. What changes in the terminal output at each step?
 
-### 2.3 The Time Machine (15 Mins)
+### 1.3 The Time Machine (15 Mins)
 
 1. Add a "Technical Skills" section to your bio.
 2. Use a command to see exactly what lines were added/removed before you save.
@@ -55,12 +33,12 @@ Your goal is to successfully take a "Snapshot" of your work.
 
 ---
 
-## 🕒 Mission 3: The Multiverse (Branching & Conflicts)
+## 🕒 Mission 2: The Multiverse (Branching & Conflicts)
 
-**⏱️ Suggested Time:** 75 Minutes  
+**⏱️ Suggested Time:** 60 Minutes  
 **Objective:** Manage parallel versions of a project and resolve timeline clashes.
 
-### 3.1 Divergent Timelines (30 Mins)
+### 2.1 Divergent Timelines (30 Mins)
 
 Imagine a client wants a "Dark Mode" version of your profile, but you must keep the "Standard" version safe.
 
@@ -69,7 +47,7 @@ Imagine a client wants a "Dark Mode" version of your profile, but you must keep 
 - **The Jump:** Switch back to the main branch.
 - **Critical Thinking:** What happened to the "Dark Mode" text you just wrote? Is it gone?
 
-### 3.2 The Timeline Clash (Merge Conflict) (45 Mins)
+### 2.2 The Timeline Clash (Merge Conflict) (30 Mins)
 
 1. Stay on the `main` branch. Change the first line of your bio and commit it.
 2. Now, attempt to merge `feature-dark-mode` into `main`.
@@ -79,37 +57,236 @@ Imagine a client wants a "Dark Mode" version of your profile, but you must keep 
 
 ---
 
-## 🕒 Mission 4: Social Coding (GitHub & Collaboration)
+## 🕒 Mission 3: Team Profile Gallery (Collaborative Project)
 
 **⏱️ Suggested Time:** 60 Minutes  
-**Objective:** Connect your local work to the cloud and contribute to a team project.
+**Objective:** Work as a team of 5 collaborators on a shared repository using fork, clone, pull requests, issues, and project management.
 
-### 4.1 Creating the Remote Vault (25 Mins)
+### 3.1 Setup: Team Repository Structure (Instructor-led, 5 Mins)
 
-1. Create a new repository on GitHub.
-2. **Task:** Link your local `multiverse-lab` folder to this new GitHub repository.
-3. **Task:** "Push" your local history to the cloud. Verify that your code is now visible on your GitHub profile.
+**Repository:** This repository (`mastering-the-code-multiverse`) already includes:
 
-### 4.2 The Team Raid (Collaborative Guestbook) (35 Mins)
+- A `Global Guestbook` folder with a comprehensive `README.md`
+- A `Global Guestbook/profiles/` folder for student participant HTML pages
+- Ready for GitHub Project Board (Kanban) with columns: "To Do", "In Progress", "Review", "Done"
+- Ready for 5 Issues to be created, one for each student participant (e.g., "Create profile page for [Participant Name]")
 
-You are now going to contribute to the "Global Guestbook" hosted by the speaker.
+**Instructor Action Before Lab:**
 
-1. **Find the Target:** Navigate to the Speaker's repository URL.
-2. **The Fork:** Create your own cloud-copy of the project.
-3. **The Clone:** Bring your copy down to your laptop.
-4. **The Contribution:** Add a unique file with your name to the `Global Guestbook` directory.
-5. **The Pull Request:** Push your change to your GitHub copy, then send a "Pull Request" to the Speaker's original project.
+1. ✅ Repository structure is ready (Global Guestbook folder exists)
+2. Create a GitHub Project Board with columns: "To Do", "In Progress", "Review", "Done"
+3. Create 5 Issues, one for each student participant with title: "Create profile page for [Participant Name]"
+4. Add labels to issues: "profile", "good first issue"
+
+**Team Formation:** Students are divided into teams of 5.
+
+### 3.2 The Fork & Clone (10 Mins)
+
+Each team member will:
+
+1. **Fork the Repository:** Navigate to the instructor's `mastering-the-code-multiverse` repository and click "Fork" to create your own copy.
+2. **Clone Your Fork:** Use Git to clone YOUR forked repository to your local machine.
+3. **Verify Remote:** Check that your fork is set as the `origin` remote.
+
+```bash
+git clone https://github.com/YOUR-USERNAME/mastering-the-code-multiverse.git
+cd mastering-the-code-multiverse
+cd "Global Guestbook"
+git remote -v
+```
+
+### 3.3 Claim Your Task (5 Mins)
+
+1. Go to the **Issues** tab in the main repository (instructor's repo).
+2. Find an issue with your name or claim an unclaimed issue.
+3. Assign the issue to yourself.
+4. Move the issue card to "In Progress" on the Project Board.
+
+### 3.4 Create Your HTML Profile Page (25 Mins)
+
+Each team member creates their own profile page:
+
+1. **Create a Branch:** Create a feature branch for your work.
+
+   ```bash
+   git checkout -b add-profile-yourname
+   ```
+
+2. **Create Your HTML File:** Inside the `Global Guestbook/profiles/` folder, create a file named `yourname.html`.
+
+**Note:** A detailed HTML template with modern styling is available in `Global Guestbook/README.md`
+
+**Quick Template Structure:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Your Name] - Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .profile-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+      }
+      .section {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <h1>[Your Name]</h1>
+      <div class="section">
+        <h2>About Me</h2>
+        <p>[Write a brief bio about yourself]</p>
+      </div>
+      <div class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>[Skill 1]</li>
+          <li>[Skill 2]</li>
+          <li>[Skill 3]</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>Interests</h2>
+        <p>[Your hobbies or interests]</p>
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+3. **Commit Your Work:**
+
+   ```bash
+   git add "Global Guestbook/profiles/yourname.html"
+   git commit -m "Add profile page for [Your Name]"
+   ```
+
+4. **Push to Your Fork:**
+
+   ```bash
+   git push origin add-profile-yourname
+   ```
+
+### 3.5 Create a Pull Request (10 Mins)
+
+1. Go to your fork on GitHub. You should see a banner suggesting to "Compare & pull request."
+2. Click it and create a Pull Request (PR) to the **main repository** (instructor's repo).
+3. In the PR description:
+   - Reference the issue number (e.g., "Closes #3")
+   - Briefly describe what you added
+4. **Move the Issue:** On the Project Board, move your issue to the "Review" column.
+
+### 3.6 Code Review & Merge (5 Mins)
+
+**Team Activity:**
+
+- Review at least one other team member's Pull Request
+- Leave a constructive comment
+- Instructor merges approved PRs
+- Move completed issues to "Done"
+
+---
+
+## 🕒 Mission 4: Staying in Sync (Optional Challenge)
+
+**⏱️ Suggested Time:** If time permits  
+**Objective:** Learn to keep your fork synchronized with the original repository.
+
+### 4.1 Adding the Upstream Remote
+
+After other team members' PRs are merged, your fork becomes outdated.
+
+1. **Add Upstream Remote:** Connect to the original repository.
+
+   ```bash
+   git remote add upstream https://github.com/INSTRUCTOR-USERNAME/mastering-the-code-multiverse.git
+   ```
+
+2. **Fetch & Merge Updates:**
+
+   ```bash
+   git checkout main
+   git fetch upstream
+   git merge upstream/main
+   ```
+
+3. **Update Your Fork:**
+   ```bash
+   git push origin main
+   ```
+
+**Critical Thinking:** Why is it important to sync your fork before starting new work?
 
 ---
 
 ## ✅ Mission Completion Checklist
 
-- [ ] I can verify my Git version in the terminal.
 - [ ] I have at least 3 unique "save points" (commits) in my project history.
 - [ ] I successfully jumped between two parallel branches.
 - [ ] I manually fixed a merge conflict without deleting the whole folder.
-- [ ] My code is live on GitHub and I have sent a Pull Request to the speaker.
+- [ ] I forked a repository and cloned it to my local machine.
+- [ ] I created an HTML profile page and pushed it to my fork.
+- [ ] I created a Pull Request to the main repository.
+- [ ] I reviewed at least one teammate's Pull Request.
+- [ ] I worked with GitHub Issues and moved tasks on a Project Board.
+- [ ] My profile page is merged into the team gallery.
 
 ---
 
-> *"In the Multiverse of Code, Git is your anchor. Master the workflow, and you master the industry."*
+## 📋 Instructor Preparation Checklist
+
+**Before the Lab:**
+
+1. ✅ Repository `mastering-the-code-multiverse` is ready with `Global Guestbook` folder
+2. ✅ `Global Guestbook/README.md` contains detailed instructions and HTML template
+3. ✅ `Global Guestbook/profiles/` folder exists and ready for student submissions
+4. Set up a GitHub Project Board with columns: To Do, In Progress, Review, Done
+5. Create Issue (one per student participant): "Create profile page for [Participant Name]"
+   - Example: "Create profile page for John Doe"
+6. Add labels to issues: "profile", "good first issue", "collaboration"
+7. Share the repository URL with students
+
+**During the Lab:**
+
+- Direct students to read `Global Guestbook/README.md` for detailed instructions
+- Monitor Pull Requests in real-time
+- Guide students through merge conflicts if they arise
+- Merge approved PRs
+- Update Project Board as needed
+- Celebrate completed profiles!
+
+---
+
+## 🎯 Learning Outcomes
+
+By the end of this lab, students will be able to:
+
+1. ✅ Use Git's three-stage workflow (Working Directory → Staging → Repository)
+2. ✅ Create and switch between branches
+3. ✅ Resolve merge conflicts manually
+4. ✅ Fork and clone repositories
+5. ✅ Create and manage Pull Requests
+6. ✅ Work with GitHub Issues and Project Boards
+7. ✅ Collaborate effectively in a team using Git workflow
+8. ✅ Understand the difference between `origin` and `upstream` remotes
+
+---
+
+> _"In the Multiverse of Code, Git is your anchor. Master the workflow, and you master the industry."_

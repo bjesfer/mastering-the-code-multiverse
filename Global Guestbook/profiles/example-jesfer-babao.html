@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesfer Babao - Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .profile-card {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .section {
+            margin: 25px 0;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skills-list li {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: transform 0.2s;
+        }
+        
+        .skills-list li:hover {
+            transform: scale(1.05);
+            background: #764ba2;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="header">
+            <h1>👤 Jesfer Babao</h1>
+            <p class="subtitle">Instructor & Full-Stack Developer</p>
+        </div>
+        
+        <div class="section">
+            <h2>📝 About Me</h2>
+            <p>
+                I'm passionate about teaching students the fundamentals of software development 
+                and version control. With years of experience in full-stack development, I believe 
+                that mastering Git and GitHub is essential for every modern developer's journey.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>💻 Technical Skills</h2>
+            <ul class="skills-list">
+                <li>Git & GitHub</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Teaching</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 Interests & Hobbies</h2>
+            <p>
+                When I'm not teaching or coding, I enjoy exploring new technologies, 
+                contributing to open-source projects, and helping students discover 
+                their passion for programming.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>🚀 Goals</h2>
+            <p>
+                My goal is to empower the next generation of developers with practical skills 
+                and industry best practices. I want every student to feel confident contributing 
+                to collaborative projects and open-source communities.
+            </p>
+        </div>
+        
+        <div class="footer">
+            Created with ❤️ as part of the Git Collaboration Mission
+        </div>
+    </div>
+</body>
+</html>
