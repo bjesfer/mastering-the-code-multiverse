@@ -68,6 +68,8 @@ Imagine a client wants a "Dark Mode" version of your profile, but you must keep 
 
 - A `Global Guestbook` folder with a comprehensive `README.md`
 - A `Global Guestbook/profiles/` folder for student participant HTML pages
+- Ready for GitHub Project Board (Kanban) with columns: "To Do", "In Progress", "Review", "Done"
+- Ready for Issues to be created, one for each student participant (e.g., "Create profile page for [Participant Name]")
 
 **Instructor Action Before Lab:**
 
